@@ -3,6 +3,8 @@ import DeleteMessage from "./deleteMessage";
 
 const prisma = new PrismaClient();
 
+export const revalidate = 0;
+
 const getMessages = async () => {
     const res = await prisma.message.findMany({
         select: {
