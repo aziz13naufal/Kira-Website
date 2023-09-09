@@ -2,6 +2,8 @@ import { PrismaClient } from "@prisma/client"
 
 const prisma = new PrismaClient();
 
+export const revalidate = 0;
+
 const getMessages = async () => {
     const res = await prisma.message.findMany({
         select: {
