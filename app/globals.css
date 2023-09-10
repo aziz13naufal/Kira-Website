@@ -1,3 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'EB Garamond', serif;
+    background-color: black;
+}
+
+.smooth-transition {
+    @apply transition-all duration-300 ease-in-out
+}
+
+.text-glow {
+    color: #fff;
+    text-shadow: 0px 0px 11px #FFF;
+    -webkit-text-stroke: 0.2px black;
+    display: block;
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-fade-out {
+    animation: fadeOutAnimation 5s ease-in forwards;
+}
+
+.animate-fade-in:hover {
+    animation: fadeInAnimation 0s ease-in-out forwards;
+}
+
+.animate-fade-in-normal {
+    animation: fadeInAnimation 0s ease-in-out forwards;
+}
+
+@keyframes fadeLoop {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.animate-fade {
+    animation: fadeLoop 3s ease-in-out infinite;
+}
+
+.animate-fade:hover {
+    animation: fadeInAnimation 0s ease-in-out infinite;
+}
