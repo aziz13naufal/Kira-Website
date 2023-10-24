@@ -26,7 +26,7 @@ const Home = () => {
         <p>THIS SITE</p>
       </div>
       
-      <div className="relative text-xl sm:text-4xl mt-16 text-gray-500 animate-fade cursor-pointer w-fit mx-auto sm:mb-20 md:mb-20 lg:mb-0">
+      <div className="relative text-xl sm:text-4xl mt-16 text-gray-500 animate-fade cursor-pointer w-fit mx-auto sm:mb-20 md:mb-20">
         <Link href={'/write'} className="block w-fit">continue</Link>
       </div>
     </div>
